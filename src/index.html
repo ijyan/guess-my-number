@@ -15,24 +15,27 @@
 
 </head>
 <body>
-  <header class="header">
-    <h1 class="header__title">Guess My Number!</h1>
-    <span class="header__between">(Between 1 and 20)</span>
-    <button class="btn btn__again">Again!</button>
-    <div class="header__number">?</div>
-  </header>
-  <main class="main">
-    <section class="check">
-      <input type="number" class="check__input">
+<header class="header">
+  <h1 class="header__title">Guess My Number!</h1>
+  <span class="header__between">(Between 1 and 99)</span>
+  <button class="btn btn__again">Again!</button>
+  <div class="header__number">?</div>
+</header>
+<main class="main">
+  <section class="check">
+    <form class="check__form">
+      <input type="number" class="check__input" min = "0" max = "99">
       <button class="btn btn__check">Check!</button>
-    </section>
-    <section class="score">
-      <div class="score__title">Start guessing...</div>
-      <div class="score__count">💯 Score: <span class="score">20</span></div>
-      <div class="score__high">
-        🥇 Highscore: <span class="highscore">0</span>
-      </div>
-    </section>
-  </main>
+    </form>
+  </section>
+  <section class="score">
+    <div class="score__title">Start guessing...</div>
+    <div class="score__count">💯 Score: <span class="count">20</span></div>
+    <div class="score__high">
+      🥇 Highscore: <span class="highscore">0</span>
+    </div>
+  </section>
+</main>
+<script src="script.js"></script>
 </body>
 </html>
